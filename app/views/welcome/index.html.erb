@@ -1,0 +1,43 @@
+<%= navbar :'fixed-top', :inverse do |nb| %>
+  <a class="navbar-brand" href="https://github.com/cybernetlab/bootstrap_it">
+    BootstrapIt Sample App
+  </a>
+  <%= nb.text Rails %>
+<% end %>
+
+<%= jumbotron :full_width do %>
+  <h1>Jumbotron <small>example</small></h1>
+  <%= button 'success button', :success %>
+  <%= button 'danger button', :danger %>
+  <%= button 'wraning button', :warning %>
+  <%= button 'info button', :info %>
+<% end %>
+
+<%= grid do |g| %>
+  <%= g.row do |r| %>
+    <%= r.cell :xs4, :sm4, :md4, :lg4 do %>
+      <div class="panel panel-primary">
+        <div class="panel-heading">Left colon</div>
+        <div class="panel-body">
+          Left colon
+        </div>
+      </div>
+    <% end %>
+    <%= r.cell :xs4, :sm4, :md4, :lg4 do %>
+      <div class="panel panel-danger">
+        <div class="panel-heading">Center colon</div>
+        <div class="panel-body">
+          Center colon
+        </div>
+      </div>
+    <% end %>
+    <%= r.cell :xs4, :sm4, :md4, :lg4 do %>
+      <div class="panel panel-success">
+        <div class="panel-heading">Right colon</div>
+        <div class="panel-body">
+          Right colon
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
